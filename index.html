@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>web</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+      <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="font-size:30px">Detik.com</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNews" aria-controls="navbarNews" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNews">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Nasional</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Internasional</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Olahraga</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Teknologi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Hiburan</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- MARQUEE BAR -->
+  <div class="bg-danger text-white py-2">
+    <div class="container d-flex justify-content-between align-items-center">
+      <marquee behavior="scroll" direction="left" class="fw-semibold">
+        [Populer] Pemerintah umumkan kebijakan baru ekonomi digital • Liga 1: Persija kalahkan Persib 3-1 • Harga BBM turun minggu ini • iPhone 16 resmi meluncur di Indonesia
+      </marquee>
+      <div id="clock" class="fw-bold px-2 text-end" style="width:300px"></div>
+    </div>
+  </div>
+  <div class="container">
+      <div class="row">
+          <!-- Carousel Berita -->
+      <div class="col-md-8">
+        <div id="carouselNews" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/gambar1.jpg" class="d-block w-100 rounded" alt="Berita 1">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Berita Utama Hari Ini</h5>
+                <p>Kebijakan Ekonomi Baru 2025.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/gambar2.jpg" class="d-block w-100 rounded" alt="Berita 2">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Timnas Indonesia Menang!</h5>
+                <p>Indonesia kalahkan Vietnam dengan skor 2-0.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/gambar3.jpg" class="d-block w-100 rounded" alt="Berita 3">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>iPhone 16 Resmi Dirilis</h5>
+                <p>Apple meluncurkan produk terbaru dengan fitur AI canggih.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/gambar4.jpg" class="d-block w-100 rounded" alt="Berita 4">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Konser Musik Terbesar 2025</h5>
+                <p>Ribuan penonton padati stadion untuk menyaksikan konser internasional.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/gambar5.jpg" class="d-block w-100 rounded" alt="Berita 5">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Pemilu 2025 Semakin Dekat</h5>
+                <p>Partai politik mulai deklarasikan calon presiden.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselNews" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselNews" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+      <!-- List Berita Populer -->
+      <div class="col-md-4">
+        <div class="card h-100 p-4 bg-info border-0">
+        <h4 class="mb-3 text-center text-light">BERITA POPULER</h4>
+        <a href="" class="btn btn-light mb-1 text-start p-3">Harga BBM turun minggu ini</a>
+        <a href="" class="btn btn-light mb-1 text-start p-3">Liga 1: Persija kalahkan Persib</a>
+        <a href="" class="btn btn-light mb-1 text-start p-3">Apple luncurkan iPhone 16</a>
+        <a href="" class="btn btn-light mb-1 text-start p-3">Kecelakaan di tol Cipularang</a>
+        <a href="" class="btn btn-light mb-1 text-start p-3">Kurs rupiah menguat terhadap dolar</a>
+        <a href="" class="btn btn-light mb-1 text-start p-3">Pemilu 2025 Semakin Dekat</a>
+        <a href="" class="btn btn-light mb-1 text-start p-3">Kebijakan Ekonomi Baru 2025r</a>
+        </div>
+      </div>
+    </div>
+      </div>
+  </div>
+  <div  class="container">
+  <hr>
+  <h3>Berita Utama</h3>
+  </hr>
+      <div class="row">
+          <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/gambar1.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Kebijakan Ekonomi Baru 2025</h6>
+            <p class="news-summary">Sebagai upaya strategis dalam menghadapi tantangan global, mendorong kualitas pertumbuhan ekonomi, serta memperluas penciptaan lapangan kerja bagi masyarakat, Pemerintah telah merumuskan Paket Ekonomi 2025 dan Penyerapan Tenaga Kerja yang terdiri dari 8 program akselerasi di 2025, 4 program yang dilanjutkan di 2026, dan 5 program andalan Pemerintah untuk penyerapan tenaga kerja.</p>
+            <a href="berita-kebijakan-ekonomi-baru-2025.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/gambar2.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Jual Beli Mobil Fiktif 2025</h6>
+            <p class="news-summary">Tiga orang pria di culik dan disekap usai melakukan transaksi jual-beli mobil di Pondok Aren, Tangerang Selatan.</p>
+            <a href="berita-jual-beli-mobil-fiktif-2025.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/gambar3.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Pembeli Utama Iphone 17 Ibox</h6>
+            <p class="news-summary">Suasana iBox Midnight Launch iPhone 16 Series di The Spark, Senayan City, Jumat dini hari (17/10/2025), berlangsung meriah. Ratusan penggemar Apple memadati lokasi bahkan sejak sebelum Matahari terbit.</p>
+            <a href="berita-pembeli-utama-iphone16-ibox-2025.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/gambar4.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Berita Aturan Kendaraan Nunggak Pajak 2025</h6>
+            <p class="news-summary">“Informasi mengenai adanya pengisian BBM hingga tujuh hari untuk mobil dan empat hari untuk motor, serta larangan pengisian bagi kendaraan yang menunggak pajak, adalah tidak benar atau hoaks,” ucap Roberth dalam keterangannya yang dikutip dari CNN Indonesia, Kamis (25/9).</p>
+            <a href="berita-aturan-kendaraan-nunggak-pajak.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/gambar5.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Berita Harga Minyak Naik Tipis 2025</h6>
+            <p class="news-summary">Kedua kontrak mencapai level terendah sejak awal Mei pada sesi sebelumnya akibat ketegangan perdagangan AS-China dan setelah Badan Energi Internasional memperkirakan surplus besar tahun depan karena produsen OPEC+ dan pesaingnya meningkatkan produksi di tengah melemahnya permintaan.</p>
+            <a href="berita-harga-minyak-naik-tipis-2025.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/gambar6.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Ledakanya Seperti Bom 2025</h6>
+            <p class="news-summary">Dilihat dari dekat, pemandangan di desa kecil Jawa Timur itu lebih janggal lagi. Tanahnya gelap dan licin, air sungainya mengandung minyak dan udaranya pekat dengan bau bensin, bahan bakar fosil sumber penghidupan sekaligus petaka bagi Wonocolo.</p>
+            <a href="berita-ledaknya-seperti-bom-2025.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+  <!-- FOOTER -->
+  <footer class="bg-dark text-light p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Detik.com</h5>
+          <p>Portal berita terpercaya yang menyajikan informasi terkini, akurat, dan mendalam dari berbagai bidang.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Kategori</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="nav-link">Nasional</a></li>
+            <li><a href="#" class="nav-link">Internasional</a></li>
+            <li><a href="#" class="nav-link">Teknologi</a></li>
+            <li><a href="#" class="nav-link">Olahraga</a></li>
+            <li><a href="#" class="nav-link">Hiburan</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Kontak</h5>
+          <p>Email: dimsz241@Detik.com<br>Telepon: +62 812 3456 7890</p>
+          <div>
+            <a href="#" class="nav-link me-3">Facebook</a>
+            <a href="#" class="nav-link me-3">Twitter</a>
+            <a href="#" class="nav-link mr-3">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <p class="text-center mb-0">©️ 2025 Detik.com. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    // Menampilkan jam real-time
+    setInterval(() => {
+      const now = new Date();
+      document.getElementById('clock').textContent = now.toLocaleString('id-ID');
+    }, 1000);
+  </script>
+  </body>
+</html>
